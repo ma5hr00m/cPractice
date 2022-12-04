@@ -1,3 +1,7 @@
+/************
+    测试文件
+*************/
+
 #include <stdio.h>
 #include "func.c"
 
@@ -17,8 +21,21 @@ int main() {
 
 
     // 测试 | sheetChange()函数
-    sheetChange ( sheet, 3, 0, 3, 1);
-    sheetPrint ( sheet );
+    while ( 1 ) {
+
+        int a, b, c, d;
+
+        scanf("%d %d %d %d", &a, &b , &c , &d);
+
+        if ( a == 113 || b == 113 || c == 113 || d == 113 ) break;
+
+        printf("------------------\n");
+
+        sheetChange ( sheet, a, b, c, d);
+        sheetPrint ( sheet );
+        
+    }
+    
 
     return 0;
 }
